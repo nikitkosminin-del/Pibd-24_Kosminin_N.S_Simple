@@ -1,8 +1,9 @@
-using System;
-using System.Windows.Forms;
 using Autofac;
+using ProjectItCompanyTimeTracking.Forms;
 using ProjectItCompanyTimeTracking.Repositories.Interfaces;
 using ProjectItCompanyTimeTracking.Services;
+using System;
+using System.Windows.Forms;
 
 namespace ProjectItCompanyTimeTracking
 {
@@ -21,8 +22,9 @@ namespace ProjectItCompanyTimeTracking
 
 		private void menuPositions_Click(object sender, EventArgs e)
 		{
-			MessageBox.Show("Форма справочника «Должности» будет добавлена на следующем шаге.",
-				"В разработке", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			var repository = _container.Resolve<IPositionRepository>();
+			var form = new PositionListForm(repository);
+			form.ShowDialog();
 		}
 
 		private void menuSpecialists_Click(object sender, EventArgs e)

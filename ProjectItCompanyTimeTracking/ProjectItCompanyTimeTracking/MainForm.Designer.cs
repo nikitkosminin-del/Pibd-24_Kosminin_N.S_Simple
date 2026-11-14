@@ -29,9 +29,9 @@
 		private void InitializeComponent()
 		{
 			menuStripMain = new MenuStrip();
-			this.menuDirectories = new ToolStripMenuItem();
-			this.menuPositions = new ToolStripMenuItem();
-			this.menuSpecialists = new ToolStripMenuItem();
+			menuDirectories = new ToolStripMenuItem();
+			menuPositions = new ToolStripMenuItem();
+			menuSpecialists = new ToolStripMenuItem();
 			menuProjects = new ToolStripMenuItem();
 			menuOperations = new ToolStripMenuItem();
 			menuAssignments = new ToolStripMenuItem();
@@ -43,7 +43,7 @@
 			// menuStripMain
 			// 
 			menuStripMain.ImageScalingSize = new Size(24, 24);
-			menuStripMain.Items.AddRange(new ToolStripItem[] { this.menuDirectories, menuOperations, menuReports });
+			menuStripMain.Items.AddRange(new ToolStripItem[] { menuDirectories, menuOperations, menuReports });
 			menuStripMain.Location = new Point(0, 0);
 			menuStripMain.Name = "menuStripMain";
 			menuStripMain.Size = new Size(800, 33);
@@ -52,31 +52,31 @@
 			// 
 			// menuDirectories
 			// 
-			this.menuDirectories.DropDownItems.AddRange(new ToolStripItem[] { this.menuPositions, this.menuSpecialists, this.menuProjects });
-			this.menuDirectories.Name = "menuDirectories";
-			this.menuDirectories.Size = new Size(139, 29);
-			this.menuDirectories.Text = "Справочники";
+			menuDirectories.DropDownItems.AddRange(new ToolStripItem[] { menuPositions, menuSpecialists, menuProjects });
+			menuDirectories.Name = "menuDirectories";
+			menuDirectories.Size = new Size(139, 29);
+			menuDirectories.Text = "Справочники";
 			// 
 			// menuPositions
 			// 
-			this.menuPositions.Name = "menuPositions";
-			this.menuPositions.Size = new Size(270, 34);
-			this.menuPositions.Text = "Должности";
-			this.menuPositions.Click += this.menuPositions_Click;
+			menuPositions.Name = "menuPositions";
+			menuPositions.Size = new Size(221, 34);
+			menuPositions.Text = "Должности";
+			menuPositions.Click += menuPositions_Click;
 			// 
 			// menuSpecialists
 			// 
-			this.menuSpecialists.Name = "menuSpecialists";
-			this.menuSpecialists.Size = new Size(270, 34);
-			this.menuSpecialists.Text = "Специалисты";
-			this.menuSpecialists.Click += this.menuSpecialists_Click;
+			menuSpecialists.Name = "menuSpecialists";
+			menuSpecialists.Size = new Size(221, 34);
+			menuSpecialists.Text = "Специалисты";
+			menuSpecialists.Click += menuSpecialists_Click;
 			// 
 			// menuProjects
 			// 
-			this.menuProjects.Name = "menuProjects";
-			this.menuProjects.Size = new Size(270, 34);
-			this.menuProjects.Text = "Проекты";
-			this.menuProjects.Click += this.menuProjects_Click;
+			menuProjects.Name = "menuProjects";
+			menuProjects.Size = new Size(221, 34);
+			menuProjects.Text = "Проекты";
+			menuProjects.Click += menuProjects_Click;
 			// 
 			// menuOperations
 			// 
@@ -90,21 +90,21 @@
 			menuAssignments.Name = "menuAssignments";
 			menuAssignments.Size = new Size(301, 34);
 			menuAssignments.Text = "Назначения и проекты";
-			menuAssignments.Click += this.menuAssignments_Click;
+			menuAssignments.Click += menuAssignments_Click;
 			// 
 			// menuTimeRecords
 			// 
 			menuTimeRecords.Name = "menuTimeRecords";
 			menuTimeRecords.Size = new Size(301, 34);
 			menuTimeRecords.Text = "Учёт времени";
-			menuTimeRecords.Click += this.menuTimeRecords_Click;
+			menuTimeRecords.Click += menuTimeRecords_Click;
 			// 
 			// menuReports
 			// 
 			menuReports.Name = "menuReports";
 			menuReports.Size = new Size(88, 29);
 			menuReports.Text = "Отчёты";
-			menuReports.Click += this.menuReports_Click;
+			menuReports.Click += menuReports_Click;
 			// 
 			// MainForm
 			// 
